@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-public class WordBase 
+public class WordBase1_1 
 {
 	public static char[][] board = new char[15][12];
 	public static int[][] point = new int[15][12]; 
@@ -126,7 +126,7 @@ public class WordBase
 					{
 						if (list.get(k).startsWith(word1)) //if it starts with the combo thus far..
 						{
-							if(team.equals("ORANGE")||team.equals("orange")||team.equals("Orange")||team.equals("O")||team.equals("o")){     
+							if(team.equalsIgnoreCase("ORANGE") || team.equalsIgnoreCase("O")){     
  							if (list.get(k).equals(word1) && (i - y1) >= height) //and is also the whole word..
 							{
 								System.out.println(list.get(k) + " " + (i-y1) + " Pos: (" + i + ") ");
