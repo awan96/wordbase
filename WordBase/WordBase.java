@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 import java.lang.*;
-
+//allen was here
 public class WordBase 
 {
 	public static char[][] board = new char[15][12];
